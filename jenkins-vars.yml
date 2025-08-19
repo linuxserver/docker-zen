@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-zen
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_USER = 'zen-browser'
+  - EXT_REPO = 'desktop'
+  - BUILD_VERSION_ARG = 'ZEN_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-zen'
+  - CONTAINER_NAME = 'zen'
+  - DOCKERHUB_IMAGE = 'linuxserver/zen'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/zen'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/zen'
+  - DIST_IMAGE = 'debian'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3001'
+  - CI_SSL = 'true'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
+  - CI_AUTH = 'user:password'
+  - CI_WEBPATH = ''
