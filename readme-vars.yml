@@ -107,4 +107,5 @@ init_diagram: |
   "zen:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "20.12.25:", desc: "Add Wayland init logic."}
   - {date: "19.08.25:", desc: "Initial release."}
