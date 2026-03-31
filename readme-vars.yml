@@ -107,5 +107,6 @@ init_diagram: |
   "zen:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "31.03.26:", desc: "Make Wayland default disable with PIXELFLUX_WAYLAND=false."}
   - {date: "20.12.25:", desc: "Add Wayland init logic."}
   - {date: "19.08.25:", desc: "Initial release."}
