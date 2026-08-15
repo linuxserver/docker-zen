@@ -24,7 +24,7 @@ RUN \
     xz-utils && \
   if [ -z ${ZEN_VERSION+x} ]; then \
     ZEN_VERSION=$(curl -sX GET "https://api.github.com/repos/zen-browser/desktop/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   curl -o \
     /tmp/zen.tar.xz -L \
